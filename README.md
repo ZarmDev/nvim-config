@@ -11,6 +11,6 @@ My file I use for neovim.
 1. Install neovim
 2. ```cd ~/.config/nvim``` then ```sudo nano init.vim```
 3. Paste in the config file
-4. Replace this line ```nnoremap <leader>r :w<CR>:!g++ % -o %< && ./%< && read -p "Press any key to continue..."<CR>``` with ```nnoremap <leader>r :w<CR>:!bash -c 'g++ % -o %< && ./%<; read -n 1 -s -r -p "Press any key..."'<CR>```
+4. Replace this line ```nnoremap <leader>r :w<CR>:!g++ % -o %< && ./%< && read -p "Press any key to continue..."<CR>``` with ```nnoremap <leader>r :w<CR>:!bash -c 'g++ % -o %<; ./%<; read -n 1 -s -r -p "Press any key..."'<CR>```
 5. Run ```nvim``` and press ```:``` and then type ```PlugInstall```
 6. Then, restart neovim and you should be good to go
